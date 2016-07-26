@@ -1,0 +1,29 @@
+<template name="index">
+    <header>
+        <div class="header">
+           公益清单
+        </div>
+    </header>
+
+    <div class="itemlist swiper-container ">
+        <div class="swiper-wrapper _flex">
+        		{{#each types}}
+				<div class="item swiper-slide _animation">
+                    {{name}}
+                </div>
+                {{/each }}
+                
+        </div>
+    </div>
+    <div class="ii-list">
+        {{#each items}}
+        <div class="ii-item">
+            <div class="ii-topic">{{topic}}</div>
+            <div class="ii-count">募捐数：{{num}} 套    已捐赠： {{recive}} 套</div>
+            <div class="ii-remark">捐赠要求：{{{remark}}}</div>
+            <div class="ii-link">捐赠</div>
+        </div>
+        {{/each }}
+    </div>
+   {{>footer active="site"}}
+</template>

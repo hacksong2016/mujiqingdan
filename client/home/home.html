@@ -1,0 +1,35 @@
+<template name="home">
+    <div class="page page-with-header-footer home">
+        <header>
+            <div class="header">
+                个人中心
+                <a class="left" href="/"><i class="fa fa-angle-left"></i></a>
+            </div>
+        </header>
+        <div class="banner _flex">
+            <div class="img ">
+                <div style="background-image:url({{user.avatar}});background-size:100% 100%">
+                    <input type="file" id="avatar" />
+                </div>
+            </div>
+            <div class="home-b _flex-1">
+                <div class="h-nickname " style="float:left;"> {{ user.nickname }} </div>
+                <div class="h-point " style="clear:left;">手机号 ：{{user.tel}} </div>
+            </div>
+        </div>
+        <div class="list">
+            <a href="/home/info" class="link home-jh"> 我的资料 <i class="fa fa-angle-right"></i></a>
+        </div>
+         <div class="list">
+            <a href="#" class="link home-jh"> 我的捐赠</a>
+            {{#each orders}}
+            <a href="/order/view?id={{_id}}" class="link home-order"> {{address}} <div class="ho-status">已完成</div><i class="fa fa-angle-right"></i></a>
+            {{/each }}
+        </div>
+        <div class="list">
+            <a href="/logout" class="link home-jh"> 退出登录 <i class="fa fa-sign-out"></i></a>
+        </div>
+      
+    </div>
+    {{>footer active='home'}}
+</template>

@@ -1,0 +1,27 @@
+<template name="cart">
+    <header>
+        <div class="header">
+           待捐赠单
+        </div>
+    </header>
+
+    {{#each items}}
+        <div class="ca-ct">
+            <div class="ca-address" data-address="{{address}}"> <i class="fa fa-check-circle-o"></i> {{address}}</div>
+            {{#each child}}
+            <div class="c-item">{{topic}}
+
+                <div class="c-num _flex">
+                    <div class="c-rem">-</div>
+                    <div class="_flex-1">{{num}}</div>
+                    <div class="c-inc">+</div>
+                </div>
+            </div>
+            {{/each }}
+        </div>
+        {{/each }}
+        <div class="c-sub-f">
+            <div class="c-sub">下单</div>
+        </div>
+   {{>footer active="cart"}}
+</template>

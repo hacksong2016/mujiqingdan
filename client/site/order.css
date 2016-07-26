@@ -1,0 +1,35 @@
+.o-num{
+ width:80px;
+ position:absolute;
+ right:10px;
+ top:0px;
+ line-height:40px;
+ text-align:right;
+ color:#999;
+ font-size:12px;
+}
+.o-tip{
+	width:100%;
+	padding:10px;
+	background:#fff;
+	margin-bottom:20px;
+}
+.o-tip-address{
+	color:#999;
+	line-height:30px;
+	font-size:14px;
+}
+.o-tip-input{
+	width:100%;
+	padding:10px;
+	    -webkit-appearance: none;
+	    border:0px;
+	    height:70px;
+	    font-size:20px;
+}
+
+.o-tip-address2{
+	color:#999;
+	line-height:30px;
+	font-size:14px;
+}

@@ -1,0 +1,28 @@
+<template name="orderView">
+    <header>
+        <div class="header">
+            {{order.address}}
+            <a href="/cart" class="left"><i class="fa fa-angle-left"></i></a>
+        </div>
+    </header>
+    <div class="o-tip">
+        <div>邮寄地址</div>
+        <div class="o-tip-address">{{order.address}}</div>
+    </div>
+    {{#each order.items}}
+    <div class="ca-ct">
+        <div class="c-item">{{topic}}
+            <div class="o-num">数量x{{num}}</div>
+        </div>
+    </div>
+    {{/each }}
+    <div class="o-tip" style="margin-top:20px;margin-bottom: 20px;">
+        <div>物流信息</div>
+        <div class="o-tip-address2">
+           快递单号:{{order.express}}<br/>
+           您的订单已签收，感谢您参与森林天使公益活动，祝您生活愉快！<br/>
+           {{format order.createAt}}
+        </div>
+    </div>
+    {{>footer active="home"}}
+</template>

@@ -1,0 +1,34 @@
+.page-herder{
+	width: 100%;
+	text-align: center;
+	font-size: 16pt;
+	color: rgb(94,94,104);
+	margin-top: 20px;
+}
+
+.page-login-btna{
+	-webkit-box-flex: 1;
+	color:#fff;
+	line-height:45px;
+	margin-top: 20px;
+	border-radius: 8px;
+	text-align: center;
+	background-image: url(/logingroung.png);
+}
+
+
+.login-single {
+	margin-top: 0px;
+	background-color: rgb(255,255,255);
+}
+
+.page-login-forget{
+	font-size: 10pt;
+	color: #3EC8AC;
+	margin-top: 10px;
+	width: 50%;
+	height:  43px  ;
+	float: left;
+
+
+}

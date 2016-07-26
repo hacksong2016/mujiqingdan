@@ -1,0 +1,58 @@
+.itemlist{
+	width:100%;
+	height:40px;
+	background:#fff;
+}
+.item{
+	line-height:40px;
+	text-align:center;
+	font-size:14px;
+	display:block;
+	color:#999;
+	border-bottom:1px solid #fff;
+}
+.showItem{
+	border-bottom:1px solid #FA800F;
+	color:#FA800F;
+}
+.ii-list{
+	background:#fff;
+	padding:5px;
+	overflow:hidden;
+	padding-bottom:50px;
+}
+.ii-item{
+	display:block;
+	border-bottom:1px solid rgba(200,200,200,.3);
+	padding:10px 5px 5px 5px;
+	position:relative;
+}
+.ii-topic{
+	color:#333;
+	line-height:25px;
+}
+.ii-count{
+	font-size:14px;
+	line-height:25px;
+	color:#999;
+	border-bottom:1px solid rgba(200,200,200,.2);
+}
+.ii-remark{
+	font-size:14px;
+	line-height:25px;
+	padding:10px 0;
+	color:#999;
+}
+.ii-link{
+	position:absolute;
+	right:15px;
+	top:20px;
+	width:70px;
+	height:25px;
+	font-size:14px;
+	border-radius:10px;
+	text-align:center;
+	color:#fff;
+	background:#FA800F;
+	line-height:25px;
+}

@@ -1,0 +1,29 @@
+<template name="order">
+    <header>
+        <div class="header">
+            {{address}}
+            <a href="/cart" class="left"><i class="fa fa-angle-left"></i></a>
+        </div>
+    </header>
+    <div class="o-tip">
+        <div>邮寄地址</div>
+        <div class="o-tip-address">{{address}}</div>
+    </div>
+    {{#each items}}
+    <div class="ca-ct">
+        <div class="c-item">{{topic}}
+            <div class="o-num">数量x{{num}}</div>
+        </div>
+    </div>
+    {{/each }}
+    <div class="o-tip" style="margin-top:20px;margin-bottom: 20px;">
+        <div>填写订单号</div>
+        <div class="o-tip-address">
+            <input class="o-tip-input" id="express" type="text" placeholder="填写快递订单号" />
+        </div>
+    </div>
+    <div class="c-sub-f">
+        <div class="c-sub">提交</div>
+    </div>
+    {{>footer active="cart"}}
+</template>
